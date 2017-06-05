@@ -38,6 +38,10 @@ wget http://mirror.fibergrid.in/apache/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat
 tar -xvzf apache-tomcat-8.5.15.tar.gz
 mv apache-tomcat-8.5.15 tomcat
 
+echo 'export CATALINA_OPTS="$CATALINA_OPTS -Xms512m"' > /opt/tomcat/bin/setenv.sh
+echo 'export CATALINA_OPTS="$CATALINA_OPTS -Xmx856m"' >> /opt/tomcat/bin/setenv.sh
+echo 'export CATALINA_OPTS="$CATALINA_OPTS -XX:MaxPermSize=512m"' >> /opt/tomcat/bin/setenv.sh
+
 
 apt-get install -y mysql-client
 
@@ -71,3 +75,6 @@ echo -e "\n\n\n\n\n\n"
 echo "SSH via Password Authentication enabled"
 apt-get install -y ntp
 DEBIAN_FRONTEND=noninteractive  apt-get install -y postfix
+
+
+apt-get install -y nginx
