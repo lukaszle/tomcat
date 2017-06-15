@@ -17,6 +17,8 @@ apt-get update -y
 #Install python software properties
 
 apt-get install python-software-properties -y
+#
+apt-get install zip unzip htop ncdu -y
 
 # Add PPA java repository
 add-apt-repository ppa:webupd8team/java -y
