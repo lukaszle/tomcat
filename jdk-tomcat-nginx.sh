@@ -80,3 +80,6 @@ DEBIAN_FRONTEND=noninteractive  apt-get install -y postfix
 
 
 apt-get install -y nginx
+cd ~
+wget https://raw.githubusercontent.com/sagespidy/tomcat/master/default
+mv default /etc/nginx/sites-enabled/default
