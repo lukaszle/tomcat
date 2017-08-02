@@ -25,8 +25,8 @@ server {
     server_name staging.thebookieapp.com;
 
 
-    ssl_certificate           /etc/ssl/certs/bookie.crt;
-    ssl_certificate_key       /etc/ssl/private/bookie.key;
+    #ssl_certificate           /etc/ssl/certs/bookie.crt;
+    #ssl_certificate_key       /etc/ssl/private/bookie.key;
 
     ssl on;
     ssl_session_cache  builtin:1000  shared:SSL:10m;

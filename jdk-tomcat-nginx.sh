@@ -36,7 +36,7 @@ echo 'export PATH=$JAVA_HOME/bin:$PATH' >> /etc/bash.bashrc
 
 # Install tomcat
 cd /opt
-wget http://mirror.fibergrid.in/apache/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz
+wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz
 tar -xvzf apache-tomcat-8.5.15.tar.gz
 mv apache-tomcat-8.5.15 tomcat
 
